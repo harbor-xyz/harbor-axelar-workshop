@@ -23,8 +23,8 @@ describe("Test Cross Chain Message passing", () => {
   // Before all tests, apply harborConfig to a new testnet and authenticate user
   beforeAll(async () => {
     harbor = new Harbor({
-      userKey: "qcE21AK1HhALsFewXX7j22",
-      projectKey: "ogYoDec4oHxrSXr14Mgv1z",
+      userKey: "ouE6h9Hw9HkszB9M2WsRA5",
+      projectKey: "pM13n2Psdz1dGR3frss7YA",
     });
     await harbor.authenticate();
     testnet = await harbor.testnet(readTestnetName());
