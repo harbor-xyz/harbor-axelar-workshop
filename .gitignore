@@ -1,0 +1,42 @@
+# Node.js dependencies
+node_modules/
+
+# Compiled output
+build/
+dist/
+artifacts/
+cache/
+coverage/
+tmp/
+*.log
+*.pid
+*.seed
+*.csv
+*.xml
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Hardhat files
+.cache/
+.history/
+artifacts/
+.cache/
+.env
+
+# Solidity files
+*.abi
+*.bin
+*.swp
+
+# macOS files
+.DS_Store
+
+# Windows files
+Thumbs.db
+ehthumbs.db
+
+testname.txt

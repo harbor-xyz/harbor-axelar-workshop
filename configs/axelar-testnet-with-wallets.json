@@ -1,0 +1,63 @@
+{
+    "bridges": [
+        {
+            "name": "AXELAR",
+            "chains": [
+                "ethereum",
+                "polygon"
+            ]
+        }
+    ],
+    "chains": [
+        {
+            "chain": "ethereum",
+            "config": {
+                "artifactsPath": "./artifacts",
+                "deploy": {
+                    "scripts": "./deploy"
+                },
+                "environment": {
+                    "AXL_GATEWAY_ADDR": "$axl_gateway_addr",
+                    "AXL_GAS_RECEIVER_ADDR": "$axl_gasReceiver_addr"
+                }
+            },
+            "wallets": [{
+                "tokens": [
+                    { "symbol": "USDC", "amount": 10000 },
+                    { "symbol": "DAI", "amount": 10000 },            
+                    { "symbol": "OP", "amount": 10000 }
+                    ] 
+                },
+                {
+                    "tokens": [
+                        { "symbol": "USDC", "amount": 10000 },
+                        { "symbol": "DAI", "amount": 10000 },            
+                        { "symbol": "OP", "amount": 10000 }
+                    ] 
+                },
+                {
+                    "tokens": [
+                        { "symbol": "USDC", "amount": 10000 },
+                        { "symbol": "DAI", "amount": 10000 },            
+                        { "symbol": "OP", "amount": 10000 }
+                    ] 
+                }
+            ],
+            "tag": "v1"
+        },
+        {
+            "chain": "polygon",
+            "config": {
+                "artifactsPath": "./artifacts",
+                "deploy": {
+                    "scripts": "./deploy"
+                },
+                "environment": {
+                    "AXL_GATEWAY_ADDR": "$axl_gateway_addr",
+                    "AXL_GAS_RECEIVER_ADDR": "$axl_gasReceiver_addr"
+                }
+            },            
+            "tag": "v1"
+        }
+    ]
+}

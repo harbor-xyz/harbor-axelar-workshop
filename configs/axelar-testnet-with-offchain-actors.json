@@ -1,0 +1,81 @@
+{
+    "bridges": [
+        {
+            "name": "AXELAR",
+            "chains": [
+                "ethereum",
+                "polygon"
+            ]
+        }
+    ],
+    "chains": [
+        {
+            "chain": "ethereum",
+            "config": {
+                "artifactsPath": "./artifacts",
+                "deploy": {
+                    "scripts": "./deploy"
+                },
+                "environment": {
+                    "AXL_GATEWAY_ADDR": "$axl_gateway_addr",
+                    "AXL_GAS_RECEIVER_ADDR": "$axl_gasReceiver_addr"
+                }
+            },
+            "tag": "v1"
+        },
+        {
+            "chain": "polygon",
+            "config": {
+                "artifactsPath": "./artifacts",
+                "deploy": {
+                    "scripts": "./deploy"
+                },
+                "environment": {
+                    "AXL_GATEWAY_ADDR": "$axl_gateway_addr",
+                    "AXL_GAS_RECEIVER_ADDR": "$axl_gasReceiver_addr"
+                }
+            },
+            "tag": "v1"
+        }
+    ],
+    "offChainActors": [
+        {
+            "name": "ipfs",
+            "image": "ipfs/go-ipfs:v0.4.23",
+            "ports": [
+                5001
+            ],
+            "tag": "v1"
+        },
+        {
+            "name": "ipfs2",
+            "image": "ipfs/go-ipfs:v0.4.23",
+            "ports": [
+                5002
+            ],
+            "tag": "v1"
+        },
+        {
+            "image": "postgres",
+            "name": "postgresDb",
+            "ports": [
+                5432
+            ],
+            "command": "postgres -cshared_preload_libraries=pg_stat_statements",
+            "environment": {
+                "POSTGRES_USER": "*****",
+                "POSTGRES_PASSWORD": "*****",
+                "POSTGRES_DB": "*****"
+            },
+            "tag": "v1"
+        },
+        {
+            "name": "redisCache",
+            "image": "redis:latest",
+            "ports": [
+                6379
+            ],
+            "tag": "v1"
+        }
+    ]
+}
