@@ -1,9 +1,9 @@
 const Harbor = require("@harbor-xyz/harbor");
-const { getTestnetName } = require("../utils/config.js");
+const { generateTestnetName, generateRandomSuffix, readTestnetName } = require("../utils/config.js");
 const { harborConfig } = require("../utils/testnetConfig.js");
 const TIMEOUT = 300000;
 
-const TESTNETNAME = getTestnetName();
+const TESTNETNAME = generateTestnetName();
 
 async function runHarborApply() {
   let harbor;
