@@ -23,7 +23,7 @@ async function runHarborApply() {
     // Initialize the Harbor object with the required parameters.
     harbor = new Harbor({
         userKey: "ouE6h9Hw9HkszB9M2WsRA5",
-        projectKey: "pM13n2Psdz1dGR3frss7YA",
+        projectKey: "54SZRwnFTUdH2xjLZmNFFP",
     });
 
     // Authenticate the Harbor object with the credentials.
