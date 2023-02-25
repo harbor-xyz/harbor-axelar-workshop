@@ -1,4 +1,4 @@
-# Harbor Workshop
+# Harbor Axelar Workshop
 
 Welcome to the Harbor Workshop at Interop Summit! This workshop will guide you through the process of setting up and running a project using the Harbor SDK.
 
@@ -64,4 +64,4 @@ If you encounter any issues during the workshop, please refer to the following r
 If you are still unable to resolve the issue, please reach out to the workshop facilitator for assistance.
 
 ## Conclusion
-Congratulations, you have completed the Harbor Interop Workshop! We hope you found this workshop informative and useful. If you have any feedback or suggestions for improvement, please let us know. Thank you for participating in our workshop!
+Congratulations, you have completed the Harbor Axelar Workshop at the Interop Summit! We hope you found this workshop informative and useful. If you have any feedback or suggestions for improvement, please let us know. Thank you for participating in our workshop!
