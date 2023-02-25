@@ -24,7 +24,7 @@ describe("Test Cross Chain Message passing", () => {
   beforeAll(async () => {
     harbor = new Harbor({
       userKey: "ouE6h9Hw9HkszB9M2WsRA5",
-      projectKey: "pM13n2Psdz1dGR3frss7YA",
+      projectKey: "54SZRwnFTUdH2xjLZmNFFP",
     });
     await harbor.authenticate();
     testnet = await harbor.testnet(readTestnetName());
