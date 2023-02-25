@@ -8,6 +8,14 @@ const TIMEOUT = 300000;
 // Defining the name of the testnet to be used
 let TESTNETNAME = getTestnetName();
 
+const keypress = async () => {
+    process.stdin.setRawMode(true)
+    return new Promise(resolve => process.stdin.once('data', () => {
+      process.stdin.setRawMode(false)
+      resolve()
+    }))
+  }
+  
 
 /**
  * This function retrieves and prints the logs for a testnet in Harbor, specifically the Ethereum logs, Polygon logs,
@@ -35,13 +43,16 @@ async function runHarborDiagnosis() {
     console.log("Testnet Details:");
     console.log("Testnet Name: ", testnet.name);
 
-    // // Retrieving and printing the Ethereum logs for the testnet
-    // console.log("**** Ethereum logs ****")
-    // let ethereumLogs = await testnet.ethereum.logs().then((response) => {
-    //     for (let i = 0; i < response.length; i++) {
-    //        console.log(response[i].message);
-    //     }
-    // });
+    // Retrieving and printing the Ethereum logs for the testnet
+    console.log("**** Ethereum logs ****")
+    let ethereumLogs = await testnet.ethereum.logs().then((response) => {
+        for (let i = 0; i < response.length; i++) {
+           console.log(response[i].message);
+        }
+    });
+
+    console.log('Continue to print Polygon Log? Scroll if needed, Press any key...')
+    await keypress()
 
     // Retrieving and printing the Polygon logs for the testnet
     console.log("**** Polygon logs ****")

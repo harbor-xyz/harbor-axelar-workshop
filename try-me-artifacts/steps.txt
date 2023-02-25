@@ -1,0 +1,9 @@
+In this demo, we will do the following (Duration: Around 20 minutes):
+1. Do basic setup using nodejs & npm command. You will need node v16 for the same.
+2. We will go through the code block on how to stand up a testnet
+3. We will stand up an Axelar testnet
+4. We will execute a test on the same, cross chain message passing between etherum and polygon chains
+5. We will debug why the tests are failing, diagonis the problem and fix the problem
+6. We will update the solidity code in testnet
+7. We will run the test again to verify
+8. We will tear down the testnet
