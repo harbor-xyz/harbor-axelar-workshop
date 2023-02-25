@@ -58,6 +58,20 @@ clear
 waitForInput "Scroll up if needed, Press any key to continue..."
 clear
 
+. ./try-me-artifacts/step6.bash
 
-# printf "\n"
-# printf "Thank you for watching!"
+waitForInput "Scroll up if needed, Press any key to continue..."
+clear
+
+. ./try-me-artifacts/step7.bash
+
+waitForInput "Scroll up if needed, Press any key to continue..."
+clear
+
+. ./try-me-artifacts/step8.bash
+
+waitForInput "Scroll up if needed, Press any key to continue..."
+clear
+
+printf "\n"
+printf "Thank you for trying harbor. Feel free to reach out to us on hello@goharbor.xyz for any comments / questions or suggestions..!"

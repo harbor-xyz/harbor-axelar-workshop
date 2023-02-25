@@ -1,1 +1,0 @@
-testnet = await harbor.apply(harborConfig, TESTNET_NAME);
