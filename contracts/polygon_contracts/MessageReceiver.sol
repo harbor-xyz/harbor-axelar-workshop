@@ -27,6 +27,6 @@ contract MessageReceiver is AxelarExecutable {
         (value) = abi.decode(payload_, (string));                
         sourceChain = sourceChain_;
         sourceAddress = sourceAddress_;
-        require(bytes(value).length <= 15, "REVERT Value length is more than 15 chars");
+        //require(bytes(value).length <= 15, "REVERT Value length is more than 15 chars");
     }
 }

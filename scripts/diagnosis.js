@@ -21,8 +21,8 @@ async function runHarborDiagnosis() {
 
     // Creating a new Harbor object with authentication credentials
     harbor = new Harbor({
-        userKey: "ouE6h9Hw9HkszB9M2WsRA5",
-        projectKey: "54SZRwnFTUdH2xjLZmNFFP",
+      userKey: "ouE6h9Hw9HkszB9M2WsRA5",
+      projectKey: "54SZRwnFTUdH2xjLZmNFFP",
     });
 
     // Authenticating the Harbor object
