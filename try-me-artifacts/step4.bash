@@ -7,7 +7,15 @@ println "\nWe will now execute the test, which passes a cross chain message from
 sleep 2
 
 println ""
-codePrintf "yarn jest test/test-cross-chain-call.test.js"
+
+println "running test on previously created testnet"
+sed -i "" '34 s/^/\/\//' test/test-cross-chain-call.test.js
+
+sleep 2
+
+sed -i "" '33 s/^\/\/\ //' test/test-cross-chain-call.test.js
+
+sleep 2
 println ""
 yarn jest test/test-cross-chain-call.test.js
 
@@ -17,5 +25,11 @@ println "Test Filename: ${GREEN}test/test-cross-chain-call.test.js${ENDCOLOR}"
 println ""
 catWithHighlightLine "test/test-cross-chain-call.test.js" 144 146
 sleep 2
+
+sed -i "" '33 s/^/\/\// ' test/test-cross-chain-call.test.js
+sed -i "" '34 s/^\/\/\ //' test/test-cross-chain-call.test.js
+
+sleep 2 
+
 
 

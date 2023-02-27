@@ -7,6 +7,7 @@ codePrintf "npx hardhat compile"
 println ""
 npx hardhat compile
 println ""
-sleep 2
 
-println "@Mani: Please update the re-apply step here"
+sed -i "" '30 s/^\/\/\ //' ./contracts/polygon_contracts/MessageReceiver.sol
+
+sleep 2

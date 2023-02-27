@@ -21,5 +21,6 @@ println "Filename: ${GREEN}scripts/applyTestnet.js${ENDCOLOR}"
 println ""
 catWithHighlightLine "scripts/applyTestnet.js" 18 18
 sleep 2
+node scripts/applyTestnet.js
 
 

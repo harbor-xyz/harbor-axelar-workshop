@@ -16,6 +16,7 @@ const keypress = async () => {
     }))
   }
   
+  const prompt = require('prompt-sync')({sigint: true});
 
 /**
  * This function retrieves and prints the logs for a testnet in Harbor, specifically the Ethereum logs, Polygon logs,
@@ -35,7 +36,7 @@ async function runHarborDiagnosis() {
 
     // Authenticating the Harbor object
     await harbor.authenticate();
-
+    
     // Retrieving the testnet details
     testnet = await harbor.testnet(TESTNETNAME);
 
@@ -52,7 +53,7 @@ async function runHarborDiagnosis() {
     });
 
     console.log('Continue to print Polygon Log? Scroll if needed, Press any key...')
-    await keypress()
+    prompt('Continue?');    
 
     // Retrieving and printing the Polygon logs for the testnet
     console.log("**** Polygon logs ****")
@@ -70,11 +71,9 @@ async function runHarborDiagnosis() {
     console.log("***** printing Axelar Relayer logs.. ****");
     const relayerlogs = await relayer.logs();
     for (let i = 0; i < relayerlogs.length; i++) {
-        console.log(relayerlogs[i].message);
+        console.log(relayerlogs[i].message);   
     }
 }
 
 // Calling the runHarborDiagnosis function and catching any errors that occur
-runHarborDiagnosis().catch((error) => {
-    console.error("Error: ", error);
-}, TIMEOUT);
+runHarborDiagnosis();

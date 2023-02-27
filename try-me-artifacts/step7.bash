@@ -11,11 +11,6 @@ codePrintf "yarn jest test/test-cross-chain-call.test.js"
 println ""
 yarn jest test/test-cross-chain-call.test.js
 
-sleep 5
-
-println "Test Filename: ${GREEN}test/test-cross-chain-call.test.js${ENDCOLOR}"
-println ""
-catWithHighlightLine "test/test-cross-chain-call.test.js" 144 146
 sleep 2
 
 

@@ -10,8 +10,8 @@ println ""
 codePrintf "node scripts/diagnosis.js"
 println ""
 node scripts/diagnosis.js
-println ""
-sleep 5
+
+sleep 2; 
 
 println "You can see in above logs that MessageReceiver.sol contains error at line number 30. Let's see that file and line"
 println ""

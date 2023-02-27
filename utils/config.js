@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 // PLEASE INPUT A TESTNET NAME!
-let TESTNET_NAME = "test-23-1117";
+let TESTNET_NAME = "interop-user-demo-flow";
 
 function _generateRandomTestnetName() {
   return `-${Math.floor(Math.random() * 1000)}`;
