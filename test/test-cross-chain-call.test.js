@@ -30,8 +30,8 @@ describe("Test Cross Chain Message passing", () => {
       projectKey: "54SZRwnFTUdH2xjLZmNFFP",
     });
     await harbor.authenticate();
-// testnet = await harbor.testnet(getTestnetName()); 
-testnet = await harbor.apply(harborConfig, TESTNET_NAME);
+//testnet = await harbor.testnet(getTestnetName()); 
+ testnet = await harbor.apply(harborConfig, TESTNET_NAME);
   }, TIMEOUT);
 
 
@@ -155,7 +155,7 @@ testnet = await harbor.apply(harborConfig, TESTNET_NAME);
   afterAll(async () => {
 
     // TODO: this is made it this for the sake try-me.bash script flow
-    if (TESTNET_NAME.includes("fixed-test-user-flow")) {
+    if (testnet.name.includes("fixed-test-user-flow")) {
       console.log("Test was successful, We're tearing down the testnet(takes around 8+ mins)");
       await harbor.stop(TESTNET_NAME);
       await harbor.stop(getTestnetName());

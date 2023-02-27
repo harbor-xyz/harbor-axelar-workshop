@@ -9,7 +9,7 @@ To follow this workshop, you'll need the following tools installed on your machi
 - Git (https://git-scm.com/)
 - Node.js [v16.x] (https://nodejs.org/en/blog/release/v16.16.0/)
 
-## Try the demo yourself
+## Try the demo yourself [MAC users only]
 
 For folks who are in the workshop can run the bash script `try-me.bash`
 
