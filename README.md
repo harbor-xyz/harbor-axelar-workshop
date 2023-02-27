@@ -11,7 +11,9 @@ To follow this workshop, you'll need the following tools installed on your machi
 
 ## Try the demo yourself
 
-For folks who are not in the workshop can run the bash script `try-me.bash`
+For folks who are in the workshop can run the bash script `try-me.bash`
+
+on terminal: ```sh try-me.bash```
 
 ## Getting started
 
