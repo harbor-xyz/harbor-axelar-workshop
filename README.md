@@ -9,6 +9,10 @@ To follow this workshop, you'll need the following tools installed on your machi
 - Git (https://git-scm.com/)
 - Node.js [v16.x] (https://nodejs.org/en/blog/release/v16.16.0/)
 
+## Try the demo yourself
+
+For folks who are not in the workshop can run the bash script `try-me.bash`
+
 ## Getting started
 
 To get started with the workshop, follow these steps:
