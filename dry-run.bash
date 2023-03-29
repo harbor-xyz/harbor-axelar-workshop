@@ -113,17 +113,16 @@ printf "Command: npx hardhat compile\n"
 sleep 3
 npx hardhat compile
 
-printf "${RED}recreate testnet${ENDCOLOR}"
+printf "${RED}apply the changes to the testnet${ENDCOLOR}"
 
 printf "\n"
 read  -n 1 -p "Press enter to proceed..." dummy
 code -r ./test/test-cross-chain-call.test.js
 
 code -g ./test/test-cross-chain-call.test.js:35
-printf "Running tests for failure\n"
 printf "Command: yarn jest test/test-cross-chain-call.test.js\n"
 sleep 3
-yarn jest test/test-cross-chain-call.test.js true
+yarn jest test/test-cross-chain-call.test.js 
 
 printf "\n"
 read  -n 1 -p "Press enter to proceed..." dummy

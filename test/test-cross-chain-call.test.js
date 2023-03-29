@@ -26,7 +26,7 @@ describe("Test Cross Chain Message passing", () => {
       userKey: "aa08effc-ef26-4713-8dfd-e0bcf4304f27",
       projectKey: "eK9utTquodDtZoxF6gmWXq",
     });
-    await harbor.authenticate();
+    await harbor.authenticate();    
     testnet = await harbor.apply(harborConfig, TESTNET_NAME);
       
   }, TIMEOUT);

@@ -4,7 +4,7 @@ const { generateTestnetName, generateRandomSuffix, readTestnetName } = require("
 const TIMEOUT = 300000;
 
 // USER_TODO: add a message that will be passed from ethereum to polygon
-const MESSAGE = "harbor workshop at interop";
+const MESSAGE = "Harbor demo with Squid";
 const TESTNETNAME = readTestnetName();
 
 /**
