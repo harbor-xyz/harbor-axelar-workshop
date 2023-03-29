@@ -8,7 +8,7 @@ const { generateTestnetName, generateRandomSuffix, readTestnetName } = require("
 const TESTNET_NAME = readTestnetName();
 
 // add a message here
-const MESSAGE = "harbor workshop at interop in test";
+const MESSAGE = "Harbor demo with Squid";
 
 const prompt = require('prompt-sync')({sigint: true});
 

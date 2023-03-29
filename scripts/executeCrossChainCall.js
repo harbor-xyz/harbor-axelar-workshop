@@ -18,7 +18,7 @@ async function runHarborApply() {
 
   //let testnetName = getTestnetName();
 
-  let testnetDetails;
+  let testnet;
 
   // Initialize the Harbor object with the required parameters.
   harbor = new Harbor({
@@ -30,18 +30,18 @@ async function runHarborApply() {
   await harbor.authenticate();
 
   // Access the already created testnet.
-  testnetDetails = await harbor.testnet(TESTNETNAME);
+  testnet = await harbor.testnet(TESTNETNAME);
 
   console.log("Testnet Details:");
-  console.log("Name: ", testnetDetails.name);
-  console.log("ID: ", testnetDetails.id);
-  console.log("Status: ", testnetDetails.status);
+  console.log("Name: ", testnet.name);
+  console.log("ID: ", testnet.id);
+  console.log("Status: ", testnet.status);
 
   console.log("loading contracts... ");
 
   // Access the Ethereum and Polygon objects from the testnet.
-  const ethereum = testnetDetails.ethereum;
-  const polygon = testnetDetails.polygon;
+  const ethereum = testnet.ethereum;
+  const polygon = testnet.polygon;
 
   // Get the contracts from Ethereum and Polygon.
   let polygonContracts = await polygon.contracts();
