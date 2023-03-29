@@ -1,4 +1,4 @@
-const Harbor = require("@harbor-xyz/harbor");
+const Harbor = require("@beam-me-up/harbor");
 const { generateTestnetName, generateRandomSuffix, readTestnetName } = require("../utils/config.js");
 const { harborConfig } = require("../utils/testnetConfig.js");
 const TIMEOUT = 300000;
@@ -10,8 +10,8 @@ async function runHarborApply() {
   let testnet;
 
   harbor = new Harbor({
-    userKey: "ouE6h9Hw9HkszB9M2WsRA5",
-    projectKey: "54SZRwnFTUdH2xjLZmNFFP",
+    userKey: "aa08effc-ef26-4713-8dfd-e0bcf4304f27",
+    projectKey: "eK9utTquodDtZoxF6gmWXq",
   });
   await harbor.authenticate();
 
@@ -21,9 +21,7 @@ async function runHarborApply() {
   console.log("Testnet Status: ", testnet.status);
   console.log("\n");
   console.log("ID: ", testnet.id);
-  console.log("\n");
-  console.log("Status: ", testnet.status);
-  console.log("\n");
+  console.log("\n");  
   console.log("Ethereum Status: ", testnet.ethereum.status);
   console.log("\n");
   console.log("Polygon Status: ", testnet.polygon.status);

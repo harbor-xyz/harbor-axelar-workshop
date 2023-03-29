@@ -1,4 +1,4 @@
-const Harbor = require("@harbor-xyz/harbor");
+const Harbor = require("@beam-me-up/harbor");
 const ethers = require("ethers");
 const { generateTestnetName, generateRandomSuffix, readTestnetName } = require("../utils/config.js");
 const TIMEOUT = 300000;
@@ -22,8 +22,8 @@ async function runHarborApply() {
 
   // Initialize the Harbor object with the required parameters.
   harbor = new Harbor({
-    userKey: "ouE6h9Hw9HkszB9M2WsRA5",
-    projectKey: "54SZRwnFTUdH2xjLZmNFFP",
+    userKey: "aa08effc-ef26-4713-8dfd-e0bcf4304f27",
+    projectKey: "eK9utTquodDtZoxF6gmWXq",
   });
 
   // Authenticate the Harbor object with the credentials.

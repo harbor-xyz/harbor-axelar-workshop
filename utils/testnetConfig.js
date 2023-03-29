@@ -17,8 +17,7 @@ const harborConfig = {
           AXL_GATEWAY_ADDR: "$axl_gateway_addr",
           AXL_GAS_RECEIVER_ADDR: "$axl_gasReceiver_addr",
         },
-      },
-      tag: "v1",
+      }
     },
     {
       chain: "polygon",
@@ -31,8 +30,7 @@ const harborConfig = {
           AXL_GATEWAY_ADDR: "$axl_gateway_addr",
           AXL_GAS_RECEIVER_ADDR: "$axl_gasReceiver_addr",
         },
-      },
-      tag: "v1",
+      }
     },
   ],
 };

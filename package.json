@@ -10,7 +10,7 @@
         "@axelar-network/axelar-cgp-solidity": "4.0.0",
         "@axelar-network/axelar-gmp-sdk-solidity": "^1.2.0",
         "@axelar-network/axelarjs-sdk": "^0.12.4",
-        "@harbor-xyz/harbor": "^0.5.0",
+        "@beam-me-up/harbor": "^0.0.34",
         "@openzeppelin/contracts": "^4.5.0",
         "ethers": "^5.6.2",
         "harbor-hardhat-anvil": "^0.0.4",

@@ -1,11 +1,11 @@
 // Import necessary libraries
-const Harbor = require("@harbor-xyz/harbor");
+const Harbor = require("@beam-me-up/harbor");
 const ethers = require("ethers");
 const { providers, Contract, utils } = require("ethers");
 const { harborConfig } = require("../utils/testnetConfig.js");
 const { generateTestnetName, generateRandomSuffix, readTestnetName } = require("../utils/config.js");
 
-const TESTNET_NAME = "fixed-testnet" + generateRandomSuffix();
+const TESTNET_NAME = readTestnetName();
 
 // add a message here
 const MESSAGE = "harbor workshop at interop in test";
@@ -23,13 +23,12 @@ describe("Test Cross Chain Message passing", () => {
   // Before all tests, apply harborConfig to a new testnet and authenticate user
   beforeAll(async () => {
     harbor = new Harbor({
-      userKey: "ouE6h9Hw9HkszB9M2WsRA5",
-      projectKey: "54SZRwnFTUdH2xjLZmNFFP",
+      userKey: "aa08effc-ef26-4713-8dfd-e0bcf4304f27",
+      projectKey: "eK9utTquodDtZoxF6gmWXq",
     });
     await harbor.authenticate();
-    testnet = await harbor.testnet(readTestnetName());
-    
-    // testnet = await harbor.apply(harborConfig, TESTNET_NAME); console.log(TESTNET_NAME);
+    testnet = await harbor.apply(harborConfig, TESTNET_NAME);
+      
   }, TIMEOUT);
 
   it(

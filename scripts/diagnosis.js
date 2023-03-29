@@ -1,5 +1,5 @@
 // Importing the Harbor module from the "@harbor-xyz/harbor" package
-const Harbor = require("@harbor-xyz/harbor");
+const Harbor = require("@beam-me-up/harbor");
 const { generateTestnetName, generateRandomSuffix, readTestnetName } = require("../utils/config.js");
 
 // Defining a constant TIMEOUT value of 5 minutes (300000 milliseconds)
@@ -22,8 +22,8 @@ async function runHarborDiagnosis() {
 
   // Creating a new Harbor object with authentication credentials
   harbor = new Harbor({
-    userKey: "ouE6h9Hw9HkszB9M2WsRA5",
-    projectKey: "54SZRwnFTUdH2xjLZmNFFP",
+    userKey: "aa08effc-ef26-4713-8dfd-e0bcf4304f27",
+    projectKey: "eK9utTquodDtZoxF6gmWXq",
   });
 
   // Authenticating the Harbor object
