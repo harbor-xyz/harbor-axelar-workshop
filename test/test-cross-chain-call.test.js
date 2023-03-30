@@ -35,6 +35,7 @@ describe("Test Cross Chain Message passing", () => {
     "Check if the cross-chain message passing works",
     async () => {
       console.log("Check if the cross-chain message passing works");
+      testnet = await harbor.testnet(TESTNET_NAME);
         // Access the Ethereum and Polygon objects from the testnet.
         const ethereum = testnet.ethereum;
         const polygon = testnet.polygon;
